@@ -28,3 +28,28 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
+
+// -----------------------------Move Cycle on scroll-------------------------
+
+const delievryboy = document.querySelector("[data-delievry-boy]");
+
+let delievryBoyMove = -80;
+let lastScrollPos = 0;
+
+window.addEventListener("scroll", function () {
+  let delievryBoyTopPos = delievryboy.getBoundingClientRect().top;
+
+  if (delievryBoyTopPos < 500 && delievryBoyTopPos > -250) {
+    let activeScrollPos = window.scrollY;
+
+    if (lastScrollPos < activeScrollPos) {
+      delievryBoyMove++;
+    } else {
+      delievryBoyMove--;
+    }
+
+    lastScrollPos = activeScrollPos;
+
+    delievryboy.style.transform = `translate(${delievryBoyMove}px)`;
+  }
+});

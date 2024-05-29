@@ -30,7 +30,7 @@
     />
     <link rel="preload" as="image" href="images/hero-bg.jpg" />
   </head>
-  <body>
+  <body id="top">
     <!-- ------------------------------------Header---------------------------- -->
 
     <header class="header" data-header>
@@ -302,7 +302,7 @@
 
               <div class="about-content">
                 <h2 class="h2 section-title">
-                  Foodie, Burgers, BBQ and best bun kababs
+                  Burgers, BBQ and best bun kababs
                   <span class="span">In Karachi</span>
                 </h2>
                 <p class="section-text">
@@ -640,8 +640,237 @@
             </figure>
           </div>
         </section>
+
+        <!-- ------------------------------------Banner---------------------------- -->
+
+        <section class="section section-divider gray banner">
+          <div class="container">
+            <ul class="banner-list">
+              <li class="banner-item banner-lg">
+                <div class="banner-card">
+                  <img
+                    src="images/banner-1.jpg"
+                    width="550"
+                    height="450"
+                    alt="Discounts"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <p class="banner-subtitle">50% Off Now!!</p>
+                    <h3 class="banner-title">
+                      Discounts for delicious tasty burgers
+                    </h3>
+                    <p class="banner-text">50% Off at first order</p>
+                    <!-- <button class="btn">Order Now</button> -->
+                  </div>
+                </div>
+              </li>
+
+              <li class="banner-item banner-sm">
+                <div class="banner-card">
+                  <img
+                    src="images/banner-2.jpg"
+                    width="550"
+                    height="450"
+                    alt="Discounts"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <p class="banner-subtitle">50% Off Now!!</p>
+                    <h3 class="banner-title">Discounted cripy rolls</h3>
+                    <p class="banner-text">50% Off at first order</p>
+                    <!-- <button class="btn">Order Now</button> -->
+                  </div>
+                </div>
+              </li>
+
+              <li class="banner-item banner-sm">
+                <div class="banner-card">
+                  <img
+                    src="images/banner-3.jpg"
+                    width="550"
+                    height="450"
+                    alt="Discounts"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <p class="banner-subtitle">50% Off Now!!</p>
+                    <h3 class="banner-title">Bun-kababs</h3>
+                    <p class="banner-text">50% Off at first order</p>
+                    <!-- <button class="btn">Order Now</button> -->
+                  </div>
+                </div>
+              </li>
+
+              <li class="banner-item banner-md">
+                <div class="banner-card">
+                  <img
+                    src="images/banner-4.jpg"
+                    width="550"
+                    height="450"
+                    alt="Discounts"
+                    class="banner-img"
+                  />
+
+                  <div class="banner-item-content">
+                    <p class="banner-subtitle">50% Off Now!!</p>
+                    <h3 class="banner-title">On BBQ</h3>
+                    <p class="banner-text">50% Off at first order</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
       </article>
     </main>
+
+    <!-- ------------------------------------Footer---------------------------- -->
+
+    <footer class="footer">
+      <div
+        class="footer-top"
+        style="background-image: url('images/footer-illustration.png')"
+      >
+        <div class="container">
+          <div class="footer-brand">
+            <a href="#" class="logo">BurgerB</a>
+            <p class="footer-text">
+              "Deliciously crafted burgers, made fresh daily – Taste the
+              difference at BurgerB!"
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contact Info</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">0300-0242779</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">hamzashakeeldurrani77@gmail.com</p>
+            </li>
+
+            <li>
+              <address class="footer-list-item">
+                Shop No.2, Plot No 67-c 12 Comm street, Phase II ext, DHA,
+                Karachi
+              </address>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Opening Hours</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">Monday-Friday, 08:00-22:00</p>
+            </li>
+
+            <li>
+              <p class="footer-list-item">Saturday late night</p>
+            </li>
+          </ul>
+
+          <form action="" class="footer-form">
+            <p class="footer-list-title">Book a Table</p>
+
+            <div class="input-wrapper">
+              <input
+                type="text"
+                name="full_name"
+                required
+                placeholder="Your Name"
+                aria-label="Your Name"
+                class="input-field"
+              />
+              <input
+                type="email"
+                name="email_address"
+                required
+                placeholder="Email"
+                aria-label="email"
+                class="input-field"
+              />
+            </div>
+
+            <div class="input-wrapper">
+              <select
+                name="total_person"
+                aria-label="Total Person"
+                class="input-field"
+              >
+                <option value="person">Person</option>
+                <option value="person">2 Person</option>
+                <option value="person">3 Person</option>
+                <option value="person">4 Person</option>
+                <option value="person">5 Person</option>
+                <option value="person">6 Person</option>
+              </select>
+
+              <input
+                type="date"
+                name="booking_date"
+                aria-label="Reservation date"
+                required
+                class="input-field"
+              />
+            </div>
+
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              class="input-field"
+              placeholder="Message"
+            >
+            </textarea>
+            <button type="submit" class="btn">Book a Table</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright-text">
+            <span>BurgerB</span> | all rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ------------------------------------back to top---------------------------- -->
+
+    <a href="#top" class="back-top-btn" data-back-top-btn>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
 
     <script src="script.js"></script>
     <!-- ionicon icons -->

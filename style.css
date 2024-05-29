@@ -541,7 +541,7 @@ body.active {
 }
 .about-banner {
   position: relative;
-  aspect-ratio: 1/0.9;
+  /* aspect-ratio: 1/0.9; */
 }
 .about-img {
   max-width: max-content;
@@ -768,4 +768,343 @@ body.active {
   left: 0;
   transform: translateX(-80px);
   transition: var(--transition-2);
+}
+
+/* ------------------------------------Banners---------------------------------- */
+
+.banner {
+  color: var(--white);
+}
+.banner-list {
+  display: grid;
+  gap: 10px;
+}
+.banner-lg {
+  height: 430px;
+}
+.banner-sm {
+  height: 200px;
+}
+.banner-md {
+  height: 250px;
+}
+
+.banner-card {
+  position: relative;
+  height: 100%;
+  box-shadow: var(--shadow-2);
+  overflow: hidden;
+}
+.banner-card .banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: var(--transition-2);
+}
+.banner-card:is(:hover, :focus-within) .banner-img {
+  transform: scale(1.05);
+}
+
+.banner-item-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  right: 20px;
+  max-height: calc(100% - 30px);
+}
+.banner-md .banner-item-content {
+  left: 50%;
+}
+
+.banner-subtitle {
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-600);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+.banner-lg .banner-title {
+  font-size: var(--fs-1);
+  max-width: 16ch;
+}
+.banner-md .banner-title,
+.banner-sm .banner-title {
+  font-size: var(--fs-2);
+  max-width: 10ch;
+}
+
+.banner-card .banner-text {
+  margin-block: 10px 15px;
+}
+
+.banner-card .btn {
+  background-color: var(--dark-orange);
+  height: 40px;
+  padding-inline: 25px;
+}
+.banner-card .btn:is(:hover, :focus) {
+  background-color: var(--rich-black-fogra-29);
+}
+
+/* ------------------------------------Footer---------------------------------- */
+
+.footer-top {
+  position: relative;
+  padding-block: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+  border-block-end: 2px solid var(--independence_30);
+  overflow: hidden;
+}
+
+.footer-top::after {
+  content: url(images/delivery-boy.svg);
+  position: absolute;
+  bottom: -11px;
+  left: -160px;
+  width: 160px;
+  overflow-x: hidden;
+  animation: running-cycle 15s linear infinite;
+}
+@keyframes running-cycle {
+  0% {
+    left: -160px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.footer-top .container {
+  display: grid;
+  gap: 30px;
+}
+
+.footer .logo {
+  font-size: 3.2rem;
+}
+.footer-text {
+  margin-block: 15px 25px;
+}
+.social-list {
+  display: flex;
+  gap: 5px;
+}
+.social-link {
+  background-color: var(--dark-orange);
+  color: var(--white);
+  font-size: 2rem;
+  padding: 10px;
+  transition: var(--transition-1);
+}
+.social-link:is(:hover, :focus) {
+  background-color: var(--rich-black-fogra-29);
+}
+
+.footer-list-title {
+  position: relative;
+  max-width: max-content;
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-3);
+  color: var(--rich-black-fogra-29);
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+.footer-list-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: calc(100% + 15px);
+  width: 40px;
+  height: 4px;
+  background-color: var(--deep-saffron);
+  border-inline-end: 5px solid var(--deep-saffron);
+  box-shadow: inset -5px 0 0 var(--white);
+}
+
+.footer-list > li:not(:last-child) {
+  margin-bottom: 15px;
+}
+.footer-list address {
+  max-width: 20ch;
+}
+
+.footer-form {
+  background-color: var(--white);
+  padding: 30px;
+  border: 1px solid var(--cultured);
+  box-shadow: var(--shadow-2);
+}
+.input-wrapper {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.input-field {
+  color: var(--spanish-gray);
+  font-size: var(--fs-4);
+  border: 1px solid var(--cultured);
+  padding: 8px 12px;
+}
+.input-field::placeholder {
+  color: var(--spanish-gray);
+}
+
+.input-field::-webkit-calender-picker-indicator {
+  opacity: 0.5;
+}
+
+textarea.input-field {
+  min-height: 50px;
+  max-height: 150px;
+  height: 100px;
+  resize: vertical;
+  margin-bottom: 10px;
+}
+.footer-form .btn {
+  font-size: 1.5rem;
+  height: 40px;
+  padding-inline: 25px;
+}
+.footer-form .btn:is(:hover, :focus) {
+  background-color: var(--rich-black-fogra-29);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-block: 20px;
+}
+
+.copyright-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* -----------------------------back top top------------------------- */
+
+.back-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  background-color: var(--deep-saffron);
+  color: var(--white);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-1);
+  z-index: 2;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  transition: var(--transition-1);
+}
+.back-top-btn.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(-10px);
+}
+
+/* -------------------------------------------------Media Quries---------------------------------------------- */
+
+/* larger than 480px */
+@media (min-width: 480px) {
+  .header-btn-group .btn {
+    display: block;
+    background-color: var(--dark-orange);
+  }
+}
+
+/* larger than 550px */
+@media (min-width: 550px) {
+  /* reused styles */
+
+  .container {
+    max-width: 550px;
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .has-scrollbar > li {
+    min-width: calc(50% - 5px);
+  }
+
+  /* other styles */
+
+  .hero-title {
+    font-size: 4.2rem;
+  }
+
+  .footer-top .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* larger than 768px */
+@media (min-width: 768px) {
+  /* reused styles */
+
+  .container {
+    max-width: 720px;
+  }
+
+  /* other styles */
+
+  .hero {
+    position: relative;
+    text-align: left;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .hero-content > :is(*, .btn) {
+    margin-inline: 0;
+  }
+  .hero-banner {
+    display: block;
+    position: absolute;
+    top: calc(50% + 86px);
+    transform: translateY(-50%);
+    right: 50px;
+    max-width: 40%;
+    aspect-ratio: 1 / 0.9;
+  }
+  .hero-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .hero::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 100%;
+    background-image: url(images/hero-bg-shape.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right bottom;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .about-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .about {
+    text-align: left;
+  }
+  .about .section-title {
+    margin-top: 0;
+  }
+  .about :is(.section-title, .btn) {
+    margin-inline: 0;
+  }
+  .about-item {
+    justify-content: flex-start;
+  }
 }

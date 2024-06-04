@@ -440,10 +440,14 @@ body.active {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) {
+.navbar-link:is(:hover, :focus),
+.header.active .navbar-link:is(:hover, :focus) {
   color: var(--dark-orange);
 }
 
+.header.active .navbar-link {
+  color: var(--black);
+}
 /* ------------------------------------Hero---------------------------------- */
 
 .hero-banner {
@@ -701,6 +705,10 @@ body.active {
 }
 .food-menu-card .del {
   color: var(--gray-x-11-gray);
+}
+
+.food-menu .btn {
+  margin-inline: auto;
 }
 
 /* ------------------------------------CTA---------------------------------- */

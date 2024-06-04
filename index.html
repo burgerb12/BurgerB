@@ -59,7 +59,9 @@
         </nav>
 
         <div class="header-btn-group">
-          <button class="btn btn-hover">Reservation</button>
+          <button class="btn btn-hover">
+            <a href="#reservation"> Reservation </a>
+          </button>
 
           <button
             class="nav-toggle-btn"
@@ -91,7 +93,9 @@
                 "Discover the perfect blend of flavors and ambiance at BurgerB
                 where every meal is a culinary adventure crafted just for you."
               </p>
-              <button class="btn btn-hover">Book A Table</button>
+              <button class="btn btn-hover">
+                <a href="#reservation"> Book A Table </a>
+              </button>
             </div>
 
             <figure class="hero-banner">
@@ -337,7 +341,9 @@
                   </li>
                 </ul>
 
-                <button class="btn btn-hover">Order Now</button>
+                <button class="btn btn-hover">
+                  <a href="menu.html"> View Menu </a>
+                </button>
               </div>
             </div>
           </div>
@@ -357,27 +363,7 @@
               ingredients to satisfy your cravings.
             </p>
 
-            <ul class="filter-list">
-              <li>
-                <button class="filter-btn active">All</button>
-              </li>
-
-              <li>
-                <button class="filter-btn">Burgers</button>
-              </li>
-
-              <li>
-                <button class="filter-btn">Rolls</button>
-              </li>
-
-              <li>
-                <button class="filter-btn">Biryani</button>
-              </li>
-
-              <li>
-                <button class="filter-btn">BBQ</button>
-              </li>
-            </ul>
+            <button class="btn btn-hover">View Menu</button>
 
             <ul class="food-menu-list">
               <li>
@@ -456,7 +442,7 @@
                 <div class="food-menu-card">
                   <div class="card-banner">
                     <img
-                      src="images/burger-plate2.png"
+                      src="images/kabab image.png"
                       width="300"
                       height="300"
                       class="w-100"
@@ -492,7 +478,7 @@
                 <div class="food-menu-card">
                   <div class="card-banner">
                     <img
-                      src="images/burger-plate2.png"
+                      src="images/kebab2.jpeg"
                       width="300"
                       height="300"
                       class="w-100"
@@ -528,7 +514,7 @@
                 <div class="food-menu-card">
                   <div class="card-banner">
                     <img
-                      src="images/burger-plate2.png"
+                      src="images/roll1.png"
                       width="300"
                       height="300"
                       class="w-100"
@@ -556,6 +542,42 @@
                     <p class="price-text">Price:</p>
                     <data value="110" class="price">PKR 500</data>
                     <del class="del">PKR 550</del>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="food-menu-card">
+                  <div class="card-banner">
+                    <img
+                      src="images/biryani1.jpeg"
+                      width="300"
+                      height="300"
+                      class="w-100"
+                      alt="kabab"
+                    />
+
+                    <div class="badge">-5%</div>
+                    <!-- <button class="btn food-menu-btn">Order Now</button> -->
+                  </div>
+
+                  <div class="wrapper">
+                    <p class="categry">Rolls</p>
+
+                    <div class="rating-wrapper">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <h3 class="h3 card-title">Chicken Biryani</h3>
+                  <div class="price-wrapper">
+                    <p class="price-text">Price:</p>
+                    <data value="110" class="price">PKR 250</data>
+                    <del class="del">PKR 300</del>
                   </div>
                 </div>
               </li>
@@ -801,7 +823,7 @@
             </li>
           </ul>
 
-          <form action="" class="footer-form">
+          <form action="" class="footer-form" id="reservation">
             <p class="footer-list-title">Book a Table</p>
 
             <div class="input-wrapper">

@@ -369,6 +369,7 @@ body.active {
   width: 30rem;
   margin: 1rem 0;
   font-size: 2rem;
+  font-weight: 800;
 }
 .menu-page-start {
   display: flex;
@@ -388,4 +389,82 @@ body.active {
 
 .menu-problem {
   margin-bottom: -14rem;
+}
+.menu-problem2 {
+  margin-bottom: -22rem;
+}
+.menu-problem3 {
+  margin-bottom: -27rem;
+}
+.menu-problem4 {
+  margin-bottom: -33rem;
+}
+
+.menu-top-pad {
+  margin-top: 4rem;
+}
+
+.margin-top {
+  margin-top: 15rem;
+}
+.margin-top2 {
+  margin-top: 20rem;
+}
+.margin-top3 {
+  margin-top: 25rem;
+}
+
+.deals-images img {
+  width: 50rem;
+}
+
+/* --------------------------------------------media queries--------------------------------- */
+
+@media (max-width: 480px) {
+  .menu-page-start {
+    flex-direction: column;
+  }
+  .menu-container {
+    width: 100%;
+  }
+  .food-menu .section-title {
+    margin-bottom: 11rem;
+  }
+  .menu-img img {
+    width: 20rem;
+  }
+  .menu-page-start2 {
+    flex-direction: column;
+  }
+  .menu-heading {
+    font-size: 6rem;
+  }
+  .menu-item li {
+    width: 20rem;
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+  }
+  .menu-container {
+    margin-left: 0;
+  }
+  .deals-images img {
+    width: 100%;
+  }
+
+  .margin-top {
+    margin-top: 0;
+  }
+  .margin-top2 {
+    margin-top: 0;
+  }
+  .margin-top3 {
+    margin-top: 0;
+  }
+
+  .header.active .logo {
+    font-size: 2.5rem;
+  }
+  .header.active .logo img {
+    width: 6rem;
+  }
 }

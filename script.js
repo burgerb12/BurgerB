@@ -32,6 +32,38 @@ window.addEventListener("scroll", function () {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".testimonial-slide");
+  const prevButton = document.querySelector(".prev");
+  const nextButton = document.querySelector(".next");
+  let currentSlide = 0;
+  const slideInterval = setInterval(nextSlide, 3000);
+
+  function nextSlide() {
+    goToSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    goToSlide(currentSlide - 1);
+  }
+
+  function goToSlide(n) {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+
+  nextButton.addEventListener("click", function () {
+    clearInterval(slideInterval);
+    nextSlide();
+  });
+
+  prevButton.addEventListener("click", function () {
+    clearInterval(slideInterval);
+    prevSlide();
+  });
+});
+
 // -----------------------------Move Cycle on scroll-------------------------
 
 const delievryboy = document.querySelector("[data-delievry-boy]");

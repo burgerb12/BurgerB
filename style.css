@@ -726,6 +726,99 @@ body.active {
   margin-inline: auto;
 }
 
+/* ------------------------------------Testimonial---------------------------------- */
+
+.testimonial-slider {
+  background-image: url("https://caffepraha.com/wp-content/uploads/2023/03/testimonial.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+.testimonial-slider h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.testimonial-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-slide {
+  display: none;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  /* position: absolute; */
+  width: 100%;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.testimonial-slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.profile-pic {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  /* border: 2px solid #fff; */
+  /* background-color: #fff; */
+  margin-top: -30px;
+}
+
+.testimonial-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-top: 40px;
+}
+
+.quote {
+  font-size: 2em;
+  color: #ffd700;
+}
+
+.author {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  letter-spacing: 5px;
+  color: var(--deep-saffron);
+  font-family: var(--ff-shadows-into-light);
+}
+
+.arrows {
+  position: absolute;
+  top: 50%;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrows .prev,
+.arrows .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 2em;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrows .prev:hover,
+.arrows .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* ------------------------------------CTA---------------------------------- */
 .cta {
   background-repeat: no-repeat;

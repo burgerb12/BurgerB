@@ -391,7 +391,8 @@ body.active {
 .line {
   width: 10px;
   height: 3px;
-  background-color: var(--black_95);
+  background-color: #ed5d29;
+  color: #ed5d29;
   border-radius: 5px;
   transition: var(--transition-1);
 }
@@ -1321,6 +1322,7 @@ textarea.input-field {
 
   .nav-toggle-btn {
     display: none;
+    /* color: #ed5d29; */
   }
   .header .container {
     gap: 20px;

@@ -362,7 +362,7 @@ body.active {
 .menu-item .span {
   display: inline;
   margin: 0 1rem;
-  color: var(--deep-saffron);
+  color: #ed5d29;
 }
 .menu-item li {
   text-align: center;

@@ -144,7 +144,7 @@ body.active {
 }
 
 ::selection {
-  background-color: var(--deep-saffron);
+  background-color: var(--optional-orange);
   color: var(--white);
 }
 
@@ -157,7 +157,7 @@ body.active {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--deep-saffron);
+  background-color: var(--optional-orange);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -274,11 +274,13 @@ body.active {
   width: calc(25% - 40px);
 }
 .has-scrollbar::-webkit-scrollbar-track {
-  outline: 2px solid var(--deep-saffron);
+  outline: 2px solid var(--optional-orange);
+  /* background: var(--optional-orange); */
   border-radius: 50px;
 }
 .has-scrollbar::-webkit-scrollbar-thumb {
-  border: 3px solid var(--cultured);
+  border: 3px solid none;
+  background-color: var(--optional-orange);
   border-radius: 50px;
 }
 
@@ -536,6 +538,7 @@ body.active {
 }
 .promo-card .card-icon svg {
   margin-inline: auto;
+  color: var(--optional-orange);
 }
 .promo-card:hover .card-icon path {
   fill: var(--white);
@@ -599,7 +602,7 @@ body.active {
   margin-bottom: 10px;
 }
 .about-item ion-icon {
-  background-color: var(--deep-saffron);
+  background-color: var(--optional-orange);
   color: var(--white);
   font-size: 1.5rem;
   padding: 4px;
@@ -725,7 +728,7 @@ body.active {
   padding-inline-end: 5px;
 }
 .food-menu-card .price {
-  color: var(--deep-saffron);
+  color: var(--optional-orange);
 }
 .food-menu-card .del {
   color: var(--gray-x-11-gray);
@@ -1070,8 +1073,8 @@ body.active {
   left: calc(100% + 15px);
   width: 40px;
   height: 4px;
-  background-color: var(--deep-saffron);
-  border-inline-end: 5px solid var(--deep-saffron);
+  background-color: var(--optional-orange);
+  border-inline-end: 5px solid var(--optional-orange);
   box-shadow: inset -5px 0 0 var(--white);
 }
 

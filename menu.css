@@ -418,6 +418,10 @@ body.active {
   width: 50rem;
 }
 
+.menu-item li {
+  text-transform: capitalize;
+}
+
 /* --------------------------------------------media queries--------------------------------- */
 
 @media (max-width: 480px) {
@@ -443,6 +447,7 @@ body.active {
     width: 20rem;
     margin: 0.5rem 0;
     font-size: 1.5rem;
+    text-transform: capitalize;
   }
   .menu-container {
     margin-left: 0;

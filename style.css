@@ -24,6 +24,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
+  --optional-orange: #ed5d29;
 
   /* Typography */
 
@@ -196,7 +197,7 @@ body.active {
 }
 
 .btn {
-  background-color: var(--bg-color, var(--deep-saffron));
+  background-color: var(--optional-orange);
   color: var(--white);
   font-family: var(--ff-rubik);
   font-size: var(--fs-4);
@@ -299,7 +300,7 @@ body.active {
 
 .section-title > .span {
   display: inline-block;
-  color: var(--deep-saffron);
+  color: var(--optional-orange);
 }
 
 .section-subtitle {
@@ -486,7 +487,7 @@ body.active {
 }
 
 .hero-subtitle {
-  color: var(--dark-orange);
+  color: var(--optional-orange);
   font-family: var(--ff-shadows-into-light);
   font-size: var(--fs-3);
   letter-spacing: 1px;
@@ -844,7 +845,7 @@ body.active {
 }
 .view__section .heading h1 {
   font-size: 4rem;
-  color: var(--deep-saffron);
+  color: var(--optional-orange);
   font-family: var(--ff-rubik);
   font-weight: var(--fw-700);
 }
@@ -1041,7 +1042,7 @@ body.active {
   gap: 5px;
 }
 .social-link {
-  background-color: var(--dark-orange);
+  background-color: var(--optional-orange);
   color: var(--white);
   font-size: 2rem;
   padding: 10px;
@@ -1117,6 +1118,7 @@ textarea.input-field {
   font-size: 1.5rem;
   height: 40px;
   padding-inline: 25px;
+  background-color: var(--optional-orange);
 }
 .footer-form .btn:is(:hover, :focus) {
   background-color: var(--rich-black-fogra-29);
@@ -1139,7 +1141,7 @@ textarea.input-field {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--deep-saffron);
+  background-color: var(--optional-orange);
   color: var(--white);
   padding: 15px;
   border-radius: 50%;
@@ -1161,7 +1163,7 @@ textarea.input-field {
 @media (min-width: 480px) {
   .header-btn-group .btn {
     display: block;
-    background-color: var(--dark-orange);
+    background-color: var(--optional-orange);
   }
 }
 

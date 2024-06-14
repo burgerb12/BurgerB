@@ -88,3 +88,19 @@ window.addEventListener("scroll", function () {
     delievryboy.style.transform = `translate(${delievryBoyMove}px)`;
   }
 });
+
+// ---------------------------------------------------swiper------------------------------------
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

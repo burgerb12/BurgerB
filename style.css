@@ -767,7 +767,7 @@ body.active {
   /* border: var(--border); */
   /* background-color: white; */
   border-radius: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   /* width: 120%; */
   text-align: left;
   /* box-shadow: 0 8px 24px hsla(228, 66%, 45%, 0.1); */
@@ -1298,6 +1298,10 @@ textarea.input-field {
 
   .input-wrapper {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .swiper__client-msg {
+    font-size: 2rem;
   }
 }
 

@@ -24,7 +24,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
-  --optional-orange: #ed5d29;
+  --cinnabar: #ed5d29;
 
   /* Typography */
 
@@ -144,7 +144,7 @@ body.active {
 }
 
 ::selection {
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
   color: var(--white);
 }
 
@@ -157,7 +157,7 @@ body.active {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -197,7 +197,7 @@ body.active {
 }
 
 .btn {
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
   color: var(--white);
   font-family: var(--ff-rubik);
   font-size: var(--fs-4);
@@ -274,13 +274,13 @@ body.active {
   width: calc(25% - 40px);
 }
 .has-scrollbar::-webkit-scrollbar-track {
-  outline: 2px solid var(--optional-orange);
-  /* background: var(--optional-orange); */
+  outline: 2px solid var(--cinnabar);
+  /* background: var( --cinnabar); */
   border-radius: 50px;
 }
 .has-scrollbar::-webkit-scrollbar-thumb {
   border: 3px solid none;
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
   border-radius: 50px;
 }
 
@@ -302,7 +302,7 @@ body.active {
 
 .section-title > .span {
   display: inline-block;
-  color: var(--optional-orange);
+  color: var(--cinnabar);
 }
 
 .section-subtitle {
@@ -489,7 +489,7 @@ body.active {
 }
 
 .hero-subtitle {
-  color: var(--optional-orange);
+  color: var(--cinnabar);
   font-family: var(--ff-shadows-into-light);
   font-size: var(--fs-3);
   letter-spacing: 1px;
@@ -538,7 +538,7 @@ body.active {
 }
 .promo-card .card-icon svg {
   margin-inline: auto;
-  color: var(--optional-orange);
+  color: var(--cinnabar);
 }
 .promo-card:hover .card-icon path {
   fill: var(--white);
@@ -602,7 +602,7 @@ body.active {
   margin-bottom: 10px;
 }
 .about-item ion-icon {
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
   color: var(--white);
   font-size: 1.5rem;
   padding: 4px;
@@ -728,7 +728,7 @@ body.active {
   padding-inline-end: 5px;
 }
 .food-menu-card .price {
-  color: var(--optional-orange);
+  color: var(--cinnabar);
 }
 .food-menu-card .del {
   color: var(--gray-x-11-gray);
@@ -848,7 +848,7 @@ body.active {
 }
 .view__section .heading h1 {
   font-size: 4rem;
-  color: var(--optional-orange);
+  color: var(--cinnabar);
   font-family: var(--ff-rubik);
   font-weight: var(--fw-700);
 }
@@ -1045,7 +1045,7 @@ body.active {
   gap: 5px;
 }
 .social-link {
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
   color: var(--white);
   font-size: 2rem;
   padding: 10px;
@@ -1073,8 +1073,8 @@ body.active {
   left: calc(100% + 15px);
   width: 40px;
   height: 4px;
-  background-color: var(--optional-orange);
-  border-inline-end: 5px solid var(--optional-orange);
+  background-color: var(--cinnabar);
+  border-inline-end: 5px solid var(--cinnabar);
   box-shadow: inset -5px 0 0 var(--white);
 }
 
@@ -1121,7 +1121,7 @@ textarea.input-field {
   font-size: 1.5rem;
   height: 40px;
   padding-inline: 25px;
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
 }
 .footer-form .btn:is(:hover, :focus) {
   background-color: var(--rich-black-fogra-29);
@@ -1144,7 +1144,7 @@ textarea.input-field {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  background-color: var(--optional-orange);
+  background-color: var(--cinnabar);
   color: var(--white);
   padding: 15px;
   border-radius: 50%;
@@ -1166,7 +1166,7 @@ textarea.input-field {
 @media (min-width: 480px) {
   .header-btn-group .btn {
     display: block;
-    background-color: var(--optional-orange);
+    background-color: var(--cinnabar);
   }
 }
 

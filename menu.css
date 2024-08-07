@@ -342,15 +342,54 @@ body.active {
 .menu-title {
   font-size: 5rem;
   font-family: var(--ff-shadows-into-light);
+  position: relative;
+  top: 0;
+}
+.menu-title2 {
+  position: relative;
+  top: 10rem;
+  font-family: var(--ff-shadows-into-light);
+  font-size: 5rem;
+}
+.menu-title3 {
+  position: relative;
+  top: 8rem;
+  font-family: var(--ff-shadows-into-light);
+  font-size: 5rem;
+}
+.menu-title4 {
+  position: relative;
+  top: 28rem;
+  font-family: var(--ff-shadows-into-light);
+  font-size: 5rem;
+}
+.menu-title5 {
+  position: relative;
+  top: 15rem;
+  font-family: var(--ff-shadows-into-light);
+  font-size: 5rem;
 }
 
 .menu-container {
-  margin-top: -10rem;
+  /* margin-top: -10rem; */
   border: 3px solid var(--black);
   padding: 2rem;
   border-radius: 50px;
   width: 50%;
   margin-left: 15%;
+}
+
+.menu-section {
+  height: 60rem;
+}
+.menu-section2 {
+  margin-top: 20rem;
+}
+.menu-section3 {
+  margin-top: -10rem;
+}
+.menu-section4 {
+  margin-top: 30rem;
 }
 
 .menu-item {
@@ -375,9 +414,18 @@ body.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5rem;
+  position: relative;
 }
 .menu-img img {
   width: 45rem;
+}
+
+.h2-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .menu-page-start2 {

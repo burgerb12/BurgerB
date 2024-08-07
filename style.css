@@ -24,7 +24,7 @@
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
   --onyx: hsl(0, 0%, 27%);
-  --cinnabar: #ed5d29;
+  --cinnabar: #f1122f;
 
   /* Typography */
 
@@ -748,7 +748,7 @@ body.active {
 }
 
 .view__section {
-  background-image: url(images/gray-bg.jpg);
+  background-image: url();
 }
 
 .swiper-slide {
@@ -1049,11 +1049,12 @@ body.active {
   color: var(--white);
   font-size: 2rem;
   padding: 10px;
+  height: 40px;
   transition: var(--transition-1);
 }
-.social-link:is(:hover, :focus) {
+/* .social-link:is(:hover, :focus) {
   background-color: var(--rich-black-fogra-29);
-}
+} */
 
 .footer-list-title {
   position: relative;
@@ -1136,6 +1137,11 @@ textarea.input-field {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.foodpanda {
+  height: 20px;
+  /* margin-bottom: -80px; */
 }
 
 /* -----------------------------back top top------------------------- */

@@ -762,7 +762,7 @@ body.active {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  border: 5px solid var(--deep-saffron);
+  border: 5px solid var(--cinnabar);
   background-color: rgb(175, 175, 175);
 }
 

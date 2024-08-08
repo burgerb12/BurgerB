@@ -394,8 +394,8 @@ body.active {
 .line {
   width: 10px;
   height: 3px;
-  background-color: #ed5d29;
-  color: #ed5d29;
+  background-color: var(--cinnabar);
+  color: var(--cinnabar);
   border-radius: 5px;
   transition: var(--transition-1);
 }
@@ -477,6 +477,10 @@ body.active {
 /* ------------------------------------Hero---------------------------------- */
 
 .hero-banner {
+  /* display: none; */
+}
+
+.hero-img-bg {
   display: none;
 }
 
@@ -1231,8 +1235,8 @@ textarea.input-field {
   }
   .hero-img {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: -20rem;
+    margin-top: 20rem;
   }
   .hero::after {
     content: "";
@@ -1381,6 +1385,7 @@ textarea.input-field {
   }
   .hero-img-bg {
     transform: scale(1.4) translate(20px, -20px);
+    display: block;
   }
 
   .food-menu-list {

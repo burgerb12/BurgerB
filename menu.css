@@ -470,14 +470,23 @@ body.active {
   text-transform: capitalize;
 }
 
+.menu-issue-banner {
+  position: absolute;
+  top: 15rem;
+}
+
 /* --------------------------------------------media queries--------------------------------- */
 
 @media (max-width: 480px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .menu-page-start {
     flex-direction: column;
   }
   .menu-container {
-    width: 100%;
+    width: 70%;
   }
   .food-menu .section-title {
     margin-bottom: 11rem;
@@ -519,5 +528,56 @@ body.active {
   }
   .header.active .logo img {
     width: 6rem;
+  }
+
+  .menu-hero {
+    width: 32rem;
+  }
+
+  .menu-title {
+    top: 9rem;
+  }
+
+  /* .menu-problem {
+    position: absolute;
+    top: 42rem;
+  } */
+
+  .mobile-menu {
+    margin-top: 15rem !important;
+  }
+  .mobile-menu2 {
+    margin-top: 20rem !important;
+  }
+
+  .menu-container2 {
+    width: 100%;
+  }
+
+  .mb-mobile-issue {
+    margin-top: -10rem;
+  }
+
+  .menu-issue.active {
+    transform: translateX(-67px);
+  }
+
+  .menu-issue-banner {
+    display: block;
+    position: absolute;
+    top: 50rem;
+    transform: translateY(-50%);
+    /* right: 50px; */
+    max-width: 40%;
+    aspect-ratio: 1 / 0.9;
+  }
+
+  .menu-hero-issue {
+    padding-block: 383px 60px;
+  }
+
+  .menu-content {
+    position: relative;
+    top: -20rem;
   }
 }

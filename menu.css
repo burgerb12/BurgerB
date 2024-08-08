@@ -297,7 +297,7 @@ body.active {
 
 .section-title > .span {
   display: inline-block;
-  color: #f15c26;
+  color: var(--deep-saffron);
 }
 
 .section-subtitle {

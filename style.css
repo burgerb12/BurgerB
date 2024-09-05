@@ -394,7 +394,7 @@ body.active {
 .line {
   width: 10px;
   height: 3px;
-  background-color: var(--deep-saffron);
+  background-color: var(--cinnabar);
   color: var(--cinnabar);
   border-radius: 5px;
   transition: var(--transition-1);
@@ -899,7 +899,7 @@ body.active {
 }
 
 .reviews-content p {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .view__section .heading h1 {
@@ -1371,7 +1371,7 @@ textarea.input-field {
   }
 
   .swiper__client-msg {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 }
 
@@ -1487,6 +1487,10 @@ textarea.input-field {
   .back-top-btn {
     bottom: 20px;
     right: 30px;
+  }
+
+  .reviews-content p {
+    font-size: 2rem;
   }
 }
 

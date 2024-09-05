@@ -913,6 +913,33 @@ body.active {
   font-weight: var(--fw-700);
 }
 
+/* ------------------------------------Gallery---------------------------------- */
+.gallery h2 {
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cinnabar);
+  font-family: var(--ff-rubik);
+  font-weight: var(--fw-700);
+  margin-bottom: 2rem;
+}
+
+.gallery-item img {
+  width: 35rem;
+}
+.gallery-item video {
+  width: 40rem;
+  /* height: 35rem; */
+}
+.gallery-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
 /* ------------------------------------CTA---------------------------------- */
 .cta {
   background-repeat: no-repeat;

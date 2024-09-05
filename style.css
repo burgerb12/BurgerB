@@ -874,7 +874,7 @@ body.active {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  width: 100%;
+  width: 140%;
   padding: 40px;
   /* padding-top: 90px; */
 }
@@ -900,6 +900,7 @@ body.active {
 
 .reviews-content p {
   font-size: 1.2rem;
+  width: 100%;
 }
 
 .view__section .heading h1 {
@@ -1491,6 +1492,9 @@ textarea.input-field {
 
   .reviews-content p {
     font-size: 2rem;
+  }
+  .testimonialbox {
+    width: 100%;
   }
 }
 

@@ -926,12 +926,9 @@ body.active {
 }
 
 .gallery-item img {
-  width: 35rem;
+  width: 100%;
 }
-.gallery-item video {
-  width: 35rem;
-  /* height: 35rem; */
-}
+
 .gallery-wrapper {
   display: flex;
   align-items: center;

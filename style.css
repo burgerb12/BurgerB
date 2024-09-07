@@ -926,7 +926,7 @@ body.active {
 }
 
 .gallery-item img {
-  width: 100%;
+  width: 25rem;
 }
 
 .gallery-wrapper {
@@ -999,7 +999,7 @@ body.active {
 .delivery-img {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 70px;
   transform: translateX(-80px);
   transition: var(--transition-2);
 }

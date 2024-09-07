@@ -218,7 +218,7 @@ body.active {
   left: 20px;
   width: 1px;
   height: 1px;
-  background-color: var(--rich-black-fogra-29);
+  background-color: var(--deep-saffron);
   transition: var(--transition-2);
   transform: translate(-50%, 51%) scale(var(--scale, 1));
   border-radius: 50%;
@@ -1097,7 +1097,7 @@ body.active {
 }
 
 .footer-top::after {
-  content: url(images/delivery-boy.svg);
+  content: url(images/delivery-boy-new.png);
   position: absolute;
   bottom: -11px;
   left: -160px;
@@ -1212,7 +1212,7 @@ textarea.input-field {
   background-color: var(--cinnabar);
 }
 .footer-form .btn:is(:hover, :focus) {
-  background-color: var(--rich-black-fogra-29);
+  background-color: var(--deep-saffron);
 }
 
 .footer-bottom {

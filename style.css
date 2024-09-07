@@ -1096,21 +1096,21 @@ body.active {
   overflow: hidden;
 }
 
-.footer-top::after {
-  content: url(images/delivery-boy-new.png);
+.footer-cycle img {
   position: absolute;
-  bottom: -11px;
+  bottom: -31px;
   left: -160px;
   width: 160px;
   overflow-x: hidden;
   animation: running-cycle 15s linear infinite;
+  z-index: 999;
 }
 @keyframes running-cycle {
   0% {
-    left: -160px;
+    left: 100%;
   }
   100% {
-    left: 100%;
+    right: 100%;
   }
 }
 
